@@ -10,8 +10,8 @@
 
   <!-- CSS Stylesheet -->
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-
-
+<!-- Jquery script -->
+<script src= "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
 
   <title> Crystals Collector! </title>
 </head>
@@ -39,28 +39,36 @@
     </ul>
   </div>
 <!-- Randomly Generated Goal Number -->
-  <div id="randomNumber"> </div>
-
+<div class = "row">
+  <div class = "col-md-4" id="goalNumber"> </div>
+  <div class = "col-md-5"></div>
+  <div class = "col-md-3" id="userTotal"> </div>
+</div>
 <!-- The crystals to click on to raise the user's number -->
   <div id='crystals'>
-    <button id="crystal-1" class="btn">
+    <button id="crystalOne" class="btn">
       <img class = 'crystalSize' src="./assets/images/red.png" alt="red rupee"></img>
     </button>
-    <button id="crystal-2" class="btn">
+    <button id="crystalTwo" class="btn">
       <img class = 'crystalSize' src="./assets/images/green.jpg" alt="green rupee"></img>
     </button>
-    <button id="crystal-3" class="btn">
+    <button id="crystalThree" class="btn">
       <img class = 'crystalSize' src="./assets/images/blue.png" alt="blue rupee"></img>
     </button>
-    <button id="crystal-4" class="btn">
+    <button id="crystalFour" class="btn">
     <img class = 'crystalSize' src="./assets/images/purple.jpg" alt=" purple rupee"></img>
    </button>
   </div>
+  <div class='row'>
+    <div class='col-md-3' id= "wins"> </div>
+    <div class = 'col-md-4'></div>
+    <div class=col-md-3 id= "losses"></div>
 <!-- The total number the user has Generated so far  -->
-  <div id="userTotal"> </div>
 
+  <!-- <button id="reset" class="btn btn-primary"> <h3> -->
+ </button>
 <!-- Link to javascript -->
-  <script type=t ext/javascript src=".assets/javascript/games.js">
+  <script type=text/javascript src="./assets/javascript/game.js"> </script>
 </body>
 
 </html>
